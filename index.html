@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS 14-2</title>
+  </head>
+  <body>
+    <h2><u>FORM LOGIN</u></h2>
+    <form action="index.html" method="post">
+      <label>Jumlah Minimal : 4, Maksimal 8 Karakter:</label>
+      <br>
+      <input type="text" name="" value="abcdefgh" minlength="4" maxlength="8" required pattern=".{0}|.{4,8}" oninvalid="this.setCustomValidity('Please lengthen this text to 4 characters or more (you are currently using '+ this.value.length +' characters).')" oninput="setCustomValidity('')">
+      <br><br>
+      <label>Jumlah Minimal : 5, Maksimal 15 Karakter:</label>
+      <br>
+      <input type="text" name="" value="" minlength="5" maxlength="15" required pattern=".{0}|.{5,15}" oninvalid="this.setCustomValidity('Please lengthen this text to 5 characters or more (you are currently using '+ this.value.length +' characters).')" oninput="setCustomValidity('')">
+      <br><br>
+      <input type="submit" name="" value="Simpan">
+      <br><br>
+    </form>
+    <small>Semoga ilmu yang dipelajari berkah - Tugas 14-2</small>
+  </body>
+</html>
